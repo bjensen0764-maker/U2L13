@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" href = "Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+         <thead>
+    <tr>
+      <td colspan="7">
+        <input id= "input" type="text" name="quantity" style="width: 95%; text-align: right; font-size: 18px;">
+      </td>
+    </tr>
+    <tr>
+        <td><input type="file" id="fileToLoad"></td>
+    </tr>
+    
+        
+  </thead>
+  <tbody>
+      
+        <tr>
+    <td><button id = "button1" class = "button" onClick = "displayButtons('1')"> 1</button></td>
+    <td><button id = "button2" class = "button" onClick = "displayButtons('2')"> 2</button></td>
+    <td><button id = "button3" class = "button" onClick = "displayButtons('3')"> 3</button></td>
+    <td><button id = "button+" class = "button" onClick = "plusOn('+')">+</button></td>
+    </tr>
+    <tr>
+        <td><button id = "button4" class = "button" onClick = "displayButtons('4')"> 4</button></td>
+        <td><button id = "button5" class = "button" onClick = "displayButtons('5')"> 5</button></td>
+        <td><button id = "button6" class = "button" onClick = "displayButtons('6')"> 6</button></td>
+        <td><button id = "button-" class = "button" onClick = "minusOn()">-</button></td>
+    </tr>
+    <tr>
+        <td><button id = "button7" class = "button" onClick = "displayButtons('7')"> 7</button></td>
+        <td><button id = "button8" class = "button" onClick = "displayButtons('8')"> 8</button></td>
+        <td><button id = "button9" class = "button" onClick = "displayButtons('9')"> 9</button></td>
+        <td><button id = "buttonX" class = "button" onClick = "multiplication()">*</button></td>
+    </tr>
+    <tr>
+        <td><button id = "button0" class = "button" onClick = "displayButtons('0')">0</button></td>
+        <td><button id = "button." class = "button" onClick = "displayButtons('.')">.</button></td>
+        <td><button id = "button=" class = "button" onClick = "displayButtons('=')">=</button></td>
+        <td><button id = "button/" class = "button" onClick = "division()">/</button></td>
+    </tr>
+    <tr>
+        <td><button id = "button17" class = "button" onClick = "displayButtons()">x²</button></td>
+        <td><button id = "button18" class = "button" onClick = "displayButtons()">√</button></td>
+        <td><button id = "button19" class = "button" onClick = "displayButtons()">π</button></td>
+        <td><button id = "button20" class = "button" onClick = "checkFileProperty()">file</button></td>
+    </tr>
+    </table>
+    </tbody>
+
+    <p id="Message"></p>
+
+<textarea class="textinput" id="fileInput" cols="40" rows="2"></textarea>
+
+    <script src="saveText.js"></script>
+    <script src="readTextArea.js"></script>
+    <script src="calculations.js"></script>
+</body>
+</html>
